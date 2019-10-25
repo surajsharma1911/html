@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Image</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        body {
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="action.html" method="POST">
+        <table>
+            <tr>
+                <td><label for="sname">Student Name</label></td>
+                <td><input type="text" placeholder="Enter your name" required autocomplete="true">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" placeholder="Enter your email" required autocomplete="true"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" id="gender" name="gender" value="male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="gender" name="gender" value="female">
+                    <label for="Fe-Male">Fe-Male</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Fe-Male</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Upload File</td>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
